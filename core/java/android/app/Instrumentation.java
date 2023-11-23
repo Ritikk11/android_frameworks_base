@@ -1258,7 +1258,7 @@ public class Instrumentation {
      * 
      * @return The newly instantiated Application object.
      */
-    static public Application newApplication(Class<?> clazz, Context context)
+     static public Application newApplication(Class<?> clazz, Context context)
             throws InstantiationException, IllegalAccessException, 
             ClassNotFoundException {
         Application app = (Application)clazz.newInstance();
