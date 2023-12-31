@@ -381,17 +381,13 @@ public class PixelPropsUtils {
 
     private static void spoofBuildGms() {
         // Alter model name and fingerprint to Pixel 2 to avoid hardware attestation enforcement
-        setPropValue("BRAND", "google");
-        setPropValue("PRODUCT", "walleye");
-        setPropValue("MODEL", "Pixel 2");
-        setPropValue("MANUFACTURER", "Google");
-        setPropValue("DEVICE", "walleye");
-        setPropValue("FINGERPRINT", "google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys");
-        setPropValue("ID", "OPM1.171019.011");
-        setPropValue("TYPE", "user");
-        setPropValue("TAGS", "release-keys");
-        setVersionField("DEVICE_INITIAL_SDK_INT", Build.VERSION_CODES.O_MR1);
-        setVersionFieldString("SECURITY_PATCH", "2017-12-05");
+        setPropValue("BRAND", "YU nitrogen");
+                    setPropValue("MANUFACTURER", "YU");
+                    setPropValue("DEVICE", "YUREKA");
+                    setPropValue("FINGERPRINT", "YU/YUREKA/YUREKA:5.1.1/LMY49J/YOG4PAS8A4:user/release-keys");
+                    setPropValue("MODEL", "YU5510");
+                    setPropValue("PRODUCT", "YUREKA");
+                    setPropValue("SECURITY_PATCH", "2015-11-01");
     }
 
     private static boolean isCallerSafetyNet() {
